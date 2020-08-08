@@ -189,6 +189,10 @@
 <keyboard>
   <chainQuitKey>C-g</chainQuitKey>
 
+  <keybind key="W-F11">
+    <action name="Reconfigure"/>
+  </keybind>
+
   <!-- Keybindings for desktop switching -->
   <keybind key="C-A-Left">
     <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
@@ -295,20 +299,19 @@
     </action>
   </keybind>
 
-  <keybind key="W-Return">
-    <action name="Execute">
-      <command>termite</command>
-    </action>
-  </keybind>
-
   <!-- Keybindings for running applications -->
-  <keybind key="W-e">
+  <keybind key="W-r">
     <action name="Execute">
       <startupnotify>
         <enabled>true</enabled>
-        <name>Konqueror</name>
+        <name>Rofi</name>
       </startupnotify>
-      <command>kfmclient openProfile filemanagement</command>
+      <command>rofi -show run</command>
+    </action>
+  </keybind>
+  <keybind key="W-Return">
+    <action name="Execute">
+      <command>termite</command>
     </action>
   </keybind>
 </keyboard>
