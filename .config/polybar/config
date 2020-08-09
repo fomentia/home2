@@ -6,7 +6,9 @@ border-top-size = 2
 border-top-color = #999
 tray-position = right
 tray-maxsize = 24
-module-margin = 1
+tray-padding = 10
+module-margin = 2
+padding = 2
 modules-right = network date battery
 font-0 = "Inconsolata:size=12;4"
 
