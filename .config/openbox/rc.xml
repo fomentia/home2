@@ -192,6 +192,11 @@
   <keybind key="W-F11">
     <action name="Reconfigure"/>
   </keybind>
+  <keybind key="C-A-l">
+    <action name="Execute">
+      <command>betterlockscreen -l blur</command>
+    </action>
+  </keybind>
 
   <!-- Keybindings for desktop switching -->
   <keybind key="C-A-Left">

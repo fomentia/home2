@@ -6,7 +6,8 @@ border-top-size = 2
 border-top-color = #999
 tray-position = right
 tray-maxsize = 24
-modules-right = date
+module-margin = 1
+modules-right = date battery
 font-0 = "Inconsolata:size=12;4"
 
 [module/date]
@@ -16,3 +17,11 @@ date = %Y-%m-%d%
 time = %H:%M:%S
 label = %time% @ %date%
 label-font = 1
+
+[module/battery]
+type = internal/battery
+battery = BAT
+adapter = AC
+full-at = 99
+poll-interval = 30
+label-charging = %percentage%%C
