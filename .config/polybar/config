@@ -7,7 +7,7 @@ border-top-color = #999
 tray-position = right
 tray-maxsize = 24
 module-margin = 1
-modules-right = date battery
+modules-right = network date battery
 font-0 = "Inconsolata:size=12;4"
 
 [module/date]
@@ -24,4 +24,11 @@ battery = BAT
 adapter = AC
 full-at = 99
 poll-interval = 30
-label-charging = %percentage%%C
+label-charging = %percentage%% (Charging)
+
+[module/network]
+type = internal/network
+interface = wlp1s0
+interval = 5
+unknown-as-up = true
+label-connected = %essid% %signal%%
