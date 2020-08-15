@@ -1,9 +1,11 @@
 [bar/basic]
 bottom = true
 width = 100%
-height = 50
+height = 30
+background = #282828
+foreground = #fbf1c7
 border-top-size = 2
-border-top-color = #999
+border-top-color = #a89984
 tray-position = right
 tray-maxsize = 24
 tray-padding = 10
