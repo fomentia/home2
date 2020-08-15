@@ -322,6 +322,48 @@
       <command>termite</command>
     </action>
   </keybind>
+
+  <!-- XF86 keybindings -->
+  <keybind key="XF86AudioMute">
+    <action name="Execute">
+      <command>pulseaudio-ctl mute</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioLowerVolume">
+    <action name="Execute">
+      <command>pulseaudio-ctl down</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioRaiseVolume">
+    <action name="Execute">
+      <command>pulseaudio-ctl up</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioPrev">
+    <action name="Execute">
+      <command>playerctl previous</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioPlay">
+    <action name="Execute">
+      <command>playerctl play-pause</command>
+    </action>
+  </keybind>
+  <keybind key="XF86AudioNext">
+    <action name="Execute">
+      <command>playerctl next</command>
+    </action>
+  </keybind>
+  <keybind key="XF86MonBrightnessDown">
+    <action name="Execute">
+      <command>xbacklight -dec 5</command>
+    </action>
+  </keybind>
+  <keybind key="XF86MonBrightnessUp">
+    <action name="Execute">
+      <command>xbacklight -inc 5</command>
+    </action>
+  </keybind>
 </keyboard>
 
 <mouse>
