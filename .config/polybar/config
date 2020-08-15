@@ -1,0 +1,36 @@
+[bar/basic]
+bottom = true
+width = 100%
+height = 50
+border-top-size = 2
+border-top-color = #999
+tray-position = right
+tray-maxsize = 24
+tray-padding = 10
+module-margin = 2
+padding = 2
+modules-right = network date battery
+font-0 = "Inconsolata:size=12;4"
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %Y-%m-%d%
+time = %H:%M:%S
+label = %time% @ %date%
+label-font = 1
+
+[module/battery]
+type = internal/battery
+battery = BAT
+adapter = AC
+full-at = 99
+poll-interval = 30
+label-charging = %percentage%% (Charging)
+
+[module/network]
+type = internal/network
+interface = wlp1s0
+interval = 5
+unknown-as-up = true
+label-connected = %essid% %signal%%
