@@ -1,3 +1,2 @@
 picom -b
 polybar basic
-betterlockscreen -w
