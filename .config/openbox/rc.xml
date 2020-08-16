@@ -258,7 +258,7 @@
   <!-- Keybindings for window switching -->
   <keybind key="W-Tab">
     <action name="Execute">
-      <command>rofi -show window</command>
+      <command>rofi -show windowcd -window-format "{c} {t}"</command>
     </action>
   </keybind>
 
