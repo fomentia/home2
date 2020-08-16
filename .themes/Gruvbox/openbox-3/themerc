@@ -30,3 +30,12 @@ menu.items.active.bg: solid flat
 menu.items.active.bg.color: #665c54
 menu.items.active.text.color: #ebdbb2
 menu.items.active.disabled.text.color: #665c54
+
+osd.bg: solid flat
+osd.bg.color: #282828
+osd.border.width: 1
+osd.border.color: #a89984
+osd.hilight.bg: solid flat
+osd.hilight.bg.color: #a89984
+osd.unhilight.bg: solid flat
+osd.unhilight.bg.color: #282828
