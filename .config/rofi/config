@@ -1,2 +1,3 @@
+rofi.modi: run,window
 rofi.font: Inconsolata 12
 rofi.theme: gruvbox-dark
