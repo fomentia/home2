@@ -31,7 +31,7 @@ content = 
 content-background = #a89984
 content-foreground = #282828
 content-padding = 3
-click-left = betterlockscreen -l
+click-left = betterlockscreen -l blur
 
 [module/date]
 type = internal/date
