@@ -46,8 +46,8 @@
 </placement>
 
 <theme>
-  <name>Clearlooks</name>
-  <titleLayout>NLIMC</titleLayout>
+  <name>Gruvbox</name>
+  <titleLayout>LIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -61,26 +61,26 @@
   <keepBorder>yes</keepBorder>
   <animateIconify>yes</animateIconify>
   <font place="ActiveWindow">
-    <name>sans</name>
-    <size>8</size>
+    <name>Inconsolata</name>
+    <size>10</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveWindow">
-    <name>sans</name>
-    <size>8</size>
+    <name>Inconsolata</name>
+    <size>10</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
-    <slant>normal</slant>
+    <slant>italic</slant>
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuHeader">
-    <name>sans</name>
-    <size>9</size>
+    <name>Inconsolata</name>
+    <size>10</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -88,7 +88,7 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuItem">
-    <name>sans</name>
+    <name>Inconsolata</name>
     <size>9</size>
     <!-- font size in points -->
     <weight>normal</weight>
@@ -97,7 +97,7 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="ActiveOnScreenDisplay">
-    <name>sans</name>
+    <name>Inconsolata</name>
     <size>9</size>
     <!-- font size in points -->
     <weight>bold</weight>
@@ -106,7 +106,7 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveOnScreenDisplay">
-    <name>sans</name>
+    <name>Inconsolata</name>
     <size>9</size>
     <!-- font size in points -->
     <weight>bold</weight>
@@ -256,32 +256,9 @@
   </keybind>
 
   <!-- Keybindings for window switching -->
-  <keybind key="A-Tab">
-    <action name="NextWindow">
-      <finalactions>
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </finalactions>
-    </action>
-  </keybind>
-  <keybind key="A-S-Tab">
-    <action name="PreviousWindow">
-      <finalactions>
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </finalactions>
-    </action>
-  </keybind>
-  <keybind key="C-A-Tab">
-    <action name="NextWindow">
-      <panels>yes</panels><desktop>yes</desktop>
-      <finalactions>
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </finalactions>
+  <keybind key="W-Tab">
+    <action name="Execute">
+      <command>rofi -show window</command>
     </action>
   </keybind>
 
@@ -314,7 +291,7 @@
         <enabled>true</enabled>
         <name>Rofi</name>
       </startupnotify>
-      <command>rofi -show run</command>
+      <command>rofi -show run -location 7 -yoffset -30 -width 20 -lines 20</command>
     </action>
   </keybind>
   <keybind key="W-Return">
