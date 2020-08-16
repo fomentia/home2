@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$(if [[ $(playerctl status) = "Paused" ]]; then echo ""; else echo ""; fi) $(playerctl metadata artist) - $(playerctl metadata title)"
