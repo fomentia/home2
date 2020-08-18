@@ -25,7 +25,8 @@ e() {
 }
 
 alias g="git"
-__git_complete g _git alias gs="git status"
+__git_complete g _git
+alias gs="git status"
 __git_complete gs _git_status
 alias gl="git log"
 __git_complete gl _git_log
