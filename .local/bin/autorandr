@@ -1,0 +1,6 @@
+#!/bin/sh
+
+xrandr --auto
+sleep 1
+killall polybar
+polybar basic > /tmp/polybar.log 2>&1 &

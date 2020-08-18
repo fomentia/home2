@@ -192,12 +192,14 @@
   <keybind key="W-F11">
     <action name="Reconfigure"/>
   </keybind>
-  <keybind key="W-F12">
-    <action name="Exit"/>
-  </keybind>
   <keybind key="C-A-l">
     <action name="Execute">
       <command>betterlockscreen -l blur</command>
+    </action>
+  </keybind>
+  <keybind key="W-F12">
+    <action name="Execute">
+      <command>autorandr</command>
     </action>
   </keybind>
 
@@ -298,6 +300,9 @@
     <action name="Execute">
       <command>termite</command>
     </action>
+  </keybind>
+  <keybind key="W-S-q">
+    <action name="Close"/>
   </keybind>
 
   <!-- XF86 keybindings -->
