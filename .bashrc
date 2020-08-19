@@ -45,7 +45,7 @@ __git_complete gco _git_checkout
 alias gd="git diff"
 __git_complete gd _git_diff
 
-export PATH="$PATH:$HOME/.local/bin/"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.cargo/bin"
 
 export EDITOR="emacsclient -s ~/.emacs.d/server/server -nw"
 export VISUAL="emacsclient -s ~/.emacs.d/server/server -nw"
