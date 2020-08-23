@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 source ~/liquidprompt/liquidprompt
+source ~/.asdf/asdf.sh
 
 alias ls='ls --color=auto'
 alias maimclip='maim -s -u | xclip -selection clipboard -t image/png -i'
@@ -19,6 +20,7 @@ export NVM_DIR="$HOME/.nvm"
 eval $(thefuck --alias oops)
 
 source /usr/share/bash-completion/completions/git
+source ~/.asdf/completions/asdf.bash
 
 e() {
     emacsclient -s ~/.emacs.d/server/server -nw ${1:-.}
