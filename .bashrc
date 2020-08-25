@@ -9,7 +9,6 @@ source ~/liquidprompt/liquidprompt
 source ~/.asdf/asdf.sh
 
 alias ls='ls --color=auto'
-alias maimclip='maim -s -u | xclip -selection clipboard -t image/png -i'
 alias dots="git --git-dir=$HOME/dots --work-tree=$HOME"
 alias tracked="cat $HOME/.config/trackfile"
 

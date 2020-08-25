@@ -326,6 +326,11 @@
   <keybind key="W-S-q">
     <action name="Close"/>
   </keybind>
+  <keybind key="W-S-C-4">
+    <action name="Execute">
+      <command>maims</command>
+    </action>
+  </keybind>
 
   <!-- XF86 keybindings -->
   <keybind key="XF86AudioMute">
