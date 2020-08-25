@@ -228,18 +228,6 @@
   <keybind key="S-A-Down">
     <action name="SendToDesktop"><to>down</to><wrap>no</wrap></action>
   </keybind>
-  <keybind key="W-F1">
-    <action name="GoToDesktop"><to>1</to></action>
-  </keybind>
-  <keybind key="W-F2">
-    <action name="GoToDesktop"><to>2</to></action>
-  </keybind>
-  <keybind key="W-F3">
-    <action name="GoToDesktop"><to>3</to></action>
-  </keybind>
-  <keybind key="W-F4">
-    <action name="GoToDesktop"><to>4</to></action>
-  </keybind>
   <keybind key="W-d">
     <action name="ToggleShowDesktop"/>
   </keybind>
@@ -277,6 +265,9 @@
   </keybind>
   <keybind key="W-m">
     <action name="Iconify"/>
+  </keybind>
+  <keybind key="W-F10">
+    <action name="ToggleFullscreen"/>
   </keybind>
 
   <!-- Keybindings for window switching -->
